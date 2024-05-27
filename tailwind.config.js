@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        mainColor: "#A35DDE",
+        secondaryColor: "#    ",
+      },
+      fontFamily: {
+        bebas: ['"Bebas Neue"', "cursive"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         mainColor: "#A35DDE",
-        secondaryColor: "#    ",
+        secondaryColor: "#FE0098",
       },
       fontFamily: {
         bebas: ['"Bebas Neue"', "cursive"],

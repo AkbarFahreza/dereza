@@ -74,9 +74,7 @@ const CodeBlockWithCopy = ({ className, children }) => {
 
 // Custom component for <p> tags
 const CustomParagraph = ({ children }) => {
-  return (
-    <p className="text-white text-xs md:text-sm leading-[120%]">{children}</p>
-  );
+  return <p className="text-white text-xs md:text-sm ">{children}</p>;
 };
 
 // Custom component for <h1> tags

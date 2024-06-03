@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        dark: "#A35DDE",
         mainColor: "#A35DDE",
         secondaryColor: "#FE0098",
       },
       fontFamily: {
-        bebas: ['"Bebas Neue"', "cursive"],
+        bebas: ["Bebas Neue", "cursive"],
+        kaushan: ["Kaushan Script", "cursive"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,5 +23,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

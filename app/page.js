@@ -1,33 +1,48 @@
+import HomeGuide from "@/components/guide/HomeGuide";
+import Home_Profile from "@/components/home/Home_Profile";
+import Nav_Bar from "@/components/home/Nav_Bar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen ">
-      <div className="bg-gradient-to-tr  h-[20vh] lg:h-[30vh] w-auto overflow-hidden relative from-mainColor to-secondaryColor">
-        <div className="w-[100%] h-[100%] bg-gradient-to-tr absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-70 from-mainColor to-secondaryColor z-10"></div>
-        <Image
-          src="/header-banner.png"
-          height={665}
-          width={1171}
-          alt="banner header"
-          className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  -scale-150 lg:-scale-125"
-        />
-        <div className="absolute top-[50%]  -ml-3  left-[50%] translate-x-[-50%] justify-center  translate-y-[-50%] z-20 flex flex-row items-center">
-          <Image src="/avatar.png" width={129} height={157} alt="avatar" />
-          <div>
-            <h1 className="font-bebas text-2xl  text-nowrap lg:text-4xl flex flex-row items-center">
-              DEK REZA
-              <Image
-                src="/verify-icon.svg"
-                width={24}
-                height={24}
-                alt="verify icon"
-                className="ml-1 mb-1 scale-75 lg:scale-100"
-              />
-            </h1>
-            <p className="text-xs text-nowrap lg:text-base font-medium">
-              Designer &#8226; coder{" "}
+    <main className="min-h-screen relative overflow-hidden">
+      <Image
+        src="/decor-1.svg"
+        width={263}
+        height={263}
+        alt=""
+        className="absolute top-[2vh] md:top-[8vh] scale-[.4] md:scale-100 -right-[130px] z-40"
+      />
+
+      <div className="w-32 h-32 blur-3xl fixed -bottom-7 -left-7 bg-gradient-to-tr from-mainColor to-secondaryColor rounded-full -z-40"></div>
+      <Home_Profile />
+      <div className="m-5 md:m-10 flex flex-row">
+        <nav className="hidden md:block mr-20">
+          <Nav_Bar />
+        </nav>
+        <div id="content-wrapper">
+          <div id="intro-text" className="flex flex-col justify-start">
+            <h2 className="font-kaushan text-2xl">Hello!! I am Reza</h2>
+            <p className="text-sm my-1 font-medium text-mainColor">
+              Custom Youtube Livechat Coder
             </p>
+            <p className="text-xs my-1 font-medium ">
+              This is supposed to be introduction words but I don’t know what to
+              type here, so let’s get to see what I’ve done!!
+            </p>
+          </div>
+          <div id="might-help-you" className="mt-5">
+            <div className="my-1 flex flex-row justify-between">
+              <h3 className="font-kaushan text-xl">Might Help You</h3>
+              <Link
+                href="#"
+                className="py-1 px-3 hover:bg-mainColor transition-all duration-100 rounded-full border-white border-2 text-xs"
+              >
+                More
+              </Link>
+            </div>
+            <HomeGuide />
           </div>
         </div>
       </div>

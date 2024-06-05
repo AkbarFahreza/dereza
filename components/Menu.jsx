@@ -1,7 +1,6 @@
-"use client"; // components/HamburgerMenu.js
+"use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Nav_Bar from "./home/Nav_Bar";
 
 const Menu = () => {
@@ -39,8 +38,8 @@ const Menu = () => {
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
-        <nav className=" ml-[26px] mt-[10vh]" onClick={toggleMenu}>
-          <Nav_Bar />
+        <nav className=" ml-[26px] mt-[10vh]">
+          <Nav_Bar toggleMenu={toggleMenu} />
         </nav>
       </div>
     </div>

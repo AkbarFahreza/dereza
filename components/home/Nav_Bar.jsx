@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 
 import { usePathname } from "next/navigation";
-function Nav_Bar() {
+function Nav_Bar({ toggleMenu }) {
   const pathname = usePathname();
   return (
     <ul>
@@ -28,6 +28,7 @@ function Nav_Bar() {
             className={` hover:text-mainColor transition-all duration-200 font-medium ${
               pathname === "/" ? "text-mainColor" : "text-white"
             }`}
+            onClick={toggleMenu}
           >
             Home
           </Link>
@@ -51,10 +52,11 @@ function Nav_Bar() {
           <Link
             href="#"
             className={` hover:text-mainColor transition-all duration-200 font-medium ${
-              pathname === "/price-list" && "/terms-of-service"
+              pathname === "/price-list" && "/terms-of-services"
                 ? "text-mainColor"
                 : "text-white"
             }`}
+            onClick={toggleMenu}
           >
             Commisions
           </Link>
@@ -78,6 +80,7 @@ function Nav_Bar() {
               className={` hover:text-mainColor transition-all duration-200 font-medium ${
                 pathname === "/price-list" ? "text-mainColor" : "text-white"
               }`}
+              onClick={toggleMenu}
             >
               Price List
             </Link>
@@ -92,17 +95,18 @@ function Nav_Bar() {
             >
               <path
                 d="M0 8.10662C3.91544 7.88603 6.83824 5.12868 7.38971 0C7.88603 6.12132 10.7537 7.22426 15 8.10662C8.71323 8.32721 7.83088 13.0147 7.33456 16.5993C6.72794 10.1471 2.97794 8.32721 0 8.10662Z"
-                fill={pathname === "/terms-of-service" ? "#A35DDE" : "white"}
+                fill={pathname === "/terms-of-services" ? "#A35DDE" : "white"}
               />
             </svg>
 
             <Link
-              href="/terms-of-service"
+              href="/terms-of-services"
               className={` hover:text-mainColor transition-all duration-200 font-medium ${
-                pathname === "/terms-of-service"
+                pathname === "/terms-of-services"
                   ? "text-mainColor"
                   : "text-white"
               }`}
+              onClick={toggleMenu}
             >
               Terms
             </Link>
@@ -129,6 +133,7 @@ function Nav_Bar() {
             className={` hover:text-mainColor transition-all duration-200 font-medium ${
               pathname === "/portfolio" ? "text-mainColor" : "text-white"
             }`}
+            onClick={toggleMenu}
           >
             Portfolio
           </Link>

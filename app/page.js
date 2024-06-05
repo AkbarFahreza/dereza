@@ -1,6 +1,7 @@
 import HomeGuide from "@/components/guide/HomeGuide";
 import Home_Profile from "@/components/home/Home_Profile";
 import Nav_Bar from "@/components/home/Nav_Bar";
+import Home_Portfolio from "@/components/portfolios/Home_Portfolio";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +33,7 @@ export default function Home() {
               type here, so let’s get to see what I’ve done!!
             </p>
           </div>
-          <div id="might-help-you" className="mt-5">
+          <div id="might-help-you" className="mt-5 max-w-[90vw]">
             <div className="my-1 flex flex-row justify-between">
               <h3 className="font-kaushan text-xl">Might Help You</h3>
               <Link
@@ -44,6 +45,7 @@ export default function Home() {
             </div>
             <HomeGuide />
           </div>
+          <Home_Portfolio />
         </div>
       </div>
     </main>

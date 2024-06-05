@@ -20,7 +20,7 @@ function HomeGuide() {
   }, []);
 
   return (
-    <div className="pt-4 flex flex-row space-x-5 align-middle overflow-x-scroll no-scrollbar pb-2">
+    <div className="pt-4 flex flex-row space-x-5 align-middle overflow-x-scroll no-scrollbar pb-2 ">
       {items.map((item) => (
         <div
           key={item.id}

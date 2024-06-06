@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Nav_Bar from "./home/Nav_Bar";
-
+import { usePathname } from "next/navigation";
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,34 +11,34 @@ const Menu = () => {
   };
 
   return (
-    <div className="fixed z-50">
+    <div className={`fixed z-50 ${usePathname() === "/" ? " md:hidden" : ""}`}>
       <button
-        className="absolute top-5 left-5 z-20 block md:hidden focus:outline-none"
+        className="absolute top-5 left-5 z-20 block focus:outline-none"
         onClick={toggleMenu}
       >
         <div
-          className={`block w-8 h-1  transition-transform duration-300 transform ${
+          className={`block w-8 h-1 transition-transform duration-300 transform ${
             isOpen ? "rotate-45 translate-y-2 bg-white" : "bg-white"
           }`}
         ></div>
         <div
-          className={`block w-8 h-1  my-1 transition-opacity duration-300 ${
+          className={`block w-8 h-1 my-1 transition-opacity duration-300 ${
             isOpen ? "opacity-0" : "bg-white"
           }`}
         ></div>
         <div
-          className={`block w-8 h-1  transition-transform duration-300 transform ${
+          className={`block w-8 h-1 transition-transform duration-300 transform ${
             isOpen ? "-rotate-45 -translate-y-2 bg-white" : "bg-white"
           }`}
         ></div>
       </button>
 
       <div
-        className={`fixed top-0 left-0 w-full origin-top-left h-screen bg-mainColor backdrop-brightness-[0.3] bg-opacity-15 backdrop-blur-md  flex flex-col items-start justify-start transition-all duration-500 transform ${
+        className={`fixed top-0 left-0 w-full origin-top-left h-screen bg-mainColor backdrop-brightness-[0.3] bg-opacity-15 backdrop-blur-md flex flex-col items-start justify-start transition-all duration-500 transform ${
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
-        <nav className=" ml-[26px] mt-[10vh]">
+        <nav className="ml-[26px] mt-[10vh]">
           <Nav_Bar toggleMenu={toggleMenu} />
         </nav>
       </div>

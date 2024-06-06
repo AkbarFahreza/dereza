@@ -33,7 +33,10 @@ export default function Home() {
               type here, so let’s get to see what I’ve done!!
             </p>
           </div>
-          <div id="might-help-you" className="mt-5 max-w-[90vw]">
+          <div
+            id="might-help-you"
+            className="mt-5 max-w-[90vw] overflow-x-scroll"
+          >
             <div className="my-1 flex flex-row justify-between">
               <h3 className="font-kaushan text-xl">Might Help You</h3>
               <Link

@@ -6,6 +6,8 @@ import Image from "next/image";
 function Home_Portfolio() {
   const [items, setItems] = useState([]);
   const [originalDataLength, setOriginalDataLength] = useState(0);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     async function fetchItems() {
       try {
@@ -26,18 +28,31 @@ function Home_Portfolio() {
         setItems(top4CommissionItems);
       } catch (error) {
         console.error("Error fetching items:", error);
+      } finally {
+        setLoading(false);
       }
     }
 
     fetchItems();
   }, []);
+
+  const Skeleton = () => (
+    <div className="flex flex-col shrink-0 min-w-[200px] p-3 rounded-lg border-[1px] border-mainColor lg:pb-4">
+      <div className="w-[200px] h-[200px] bg-gray-300 animate-pulse rounded-md"></div>
+      <div className="mt-2 flex flex-col space-y-2">
+        <div className="h-4 bg-gray-300 rounded animate-pulse w-3/4"></div>
+        <div className="h-4 bg-gray-300 rounded animate-pulse w-1/2"></div>
+      </div>
+    </div>
+  );
+
   return (
-    <div id="portfolio" className="mt-5  max-w-[90vw]">
-      <div className="my-1 flex flex-row justify-between  ">
+    <div id="portfolio" className="mt-5 max-w-[90vw]">
+      <div className="my-1 flex flex-row justify-between">
         <div className="flex flex-row space-x-2">
           <h3 className="font-kaushan text-xl">Portfolios</h3>
           <p className="text-xs font-bold border-2 rounded-full border-white py-1 px-2">
-            {originalDataLength - 4}+
+            {loading ? "..." : originalDataLength - 4}+
           </p>
         </div>
         <Link
@@ -48,31 +63,40 @@ function Home_Portfolio() {
         </Link>
       </div>
       <div className="mt-4 py-2 flex flex-row space-x-4 lg:space-x-5 whitespace-nowrap overflow-x-scroll pb-2">
-        {items.map((item) => (
-          <div
-            key={item.id}
-            className="flex flex-col shrink-0 min-w-[200px] p-3 rounded-lg border-[1px] border-mainColor lg:pb-4 hover:shadow-sm hover:shadow-mainColor transition-all duration-200"
-          >
-            <Image
-              width={200}
-              height={200}
-              alt={item.image}
-              className="w-[200px] h-auto rounded-md "
-              src={item.image}
-            />
-            <div className="mt-2 flex flex-col space-y-2">
-              <h1 className="font-bold mobile-title-b text-white lg:text-md">
-                {item.name}
-              </h1>
-              <Link
-                href={item.sourceLink}
-                className="py-[2px] px-3 font-bold custom-gradient rounded-full text-white border-[1px] border-mainColor w-fit text-sm  transition-all duration-500"
-              >
-                Detail
-              </Link>
+        {loading ? (
+          <>
+            <Skeleton />
+            <Skeleton />
+            <Skeleton />
+            <Skeleton />
+          </>
+        ) : (
+          items.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col shrink-0 min-w-[200px] p-3 rounded-lg border-[1px] border-mainColor lg:pb-4 hover:shadow-sm hover:shadow-mainColor transition-all duration-200"
+            >
+              <Image
+                width={200}
+                height={200}
+                alt={item.image}
+                className="w-[200px] h-auto rounded-md "
+                src={item.image}
+              />
+              <div className="mt-2 flex flex-col space-y-2">
+                <h1 className="font-bold mobile-title-b text-white lg:text-md">
+                  {item.name}
+                </h1>
+                <Link
+                  href={item.sourceLink}
+                  className="py-[2px] px-3 font-bold custom-gradient rounded-full text-white border-[1px] border-mainColor w-fit text-sm  transition-all duration-500"
+                >
+                  Detail
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );

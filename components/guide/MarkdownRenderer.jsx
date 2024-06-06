@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 // Component for code block with copy functionality
 const CodeBlockWithCopy = ({ className, children }) => {
@@ -52,8 +52,14 @@ const CodeBlockWithCopy = ({ className, children }) => {
         </svg>
 
         <button
-          onClick={copyToClipboard}
-          className=" bg-mainColor text-white py-[2px] px-2 rounded text-sm"
+          onClick={() => {
+            if (navigator.clipboard) {
+              copyToClipboard();
+            } else {
+              alert("Clipboard tidak tersedia pada browser ini.");
+            }
+          }}
+          className=" bg-mainColor text-white py-[2px] px-2 rounded text-sm hidden md:block"
         >
           {copyButtonText}
         </button>
@@ -62,7 +68,7 @@ const CodeBlockWithCopy = ({ className, children }) => {
       <div ref={codeRef}>
         <SyntaxHighlighter
           language={language}
-          style={darcula}
+          style={a11yDark}
           className="rounded-md"
         >
           {children}

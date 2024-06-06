@@ -8,9 +8,9 @@ function Nav_Bar({ toggleMenu }) {
   const pathname = usePathname();
   return (
     <ul>
-      <li className="hover:text-mainColor transition-all duration-200 ">
+      <li className="hover:text-mainColor transition-all duration-200">
         <div className="h-5 w-1 border-l-2 border-dotted border-mainColor ml-2 mb-[2px]"></div>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 ">
           <svg
             width="18"
             height="20"
@@ -50,9 +50,9 @@ function Nav_Bar({ toggleMenu }) {
             />
           </svg>
           <Link
-            href="#"
+            href="/terms-of-services"
             className={` hover:text-mainColor transition-all duration-200 font-medium ${
-              pathname === "/price-list" && "/terms-of-services"
+              pathname === "/terms-of-services"
                 ? "text-mainColor"
                 : "text-white"
             }`}
@@ -61,7 +61,7 @@ function Nav_Bar({ toggleMenu }) {
             Commisions
           </Link>
         </div>
-        <ul className="ml-6">
+        {/* <ul className="ml-6">
           <li className="flex flex-row gap-2 my-2 items-center">
             <svg
               width="15"
@@ -111,7 +111,7 @@ function Nav_Bar({ toggleMenu }) {
               Terms
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </li>
       <li className="hover:text-mainColor transition-all duration-200 ">
         <div className="h-5 w-1 border-l-2 border-dotted border-mainColor ml-2 mb-[2px]"></div>

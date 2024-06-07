@@ -4,7 +4,6 @@ import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-// Component for code block with copy functionality
 const CodeBlockWithCopy = ({ className, children }) => {
   const language = className?.replace("language-", "");
   const codeRef = useRef(null);
@@ -78,12 +77,10 @@ const CodeBlockWithCopy = ({ className, children }) => {
   );
 };
 
-// Custom component for <p> tags
 const CustomParagraph = ({ children }) => {
   return <p className="text-white text-xs md:text-sm ">{children}</p>;
 };
 
-// Custom component for <h1> tags
 const CustomH1 = ({ children }) => {
   return <h1 className="text-4xl font-bold text-red-500">{children}</h1>;
 };
@@ -91,7 +88,6 @@ const CustomStrong = ({ children }) => {
   return <strong className="font-bold text-white">{children}</strong>;
 };
 
-// Custom component for <a> tags
 const CustomLink = ({ href, children }) => {
   return (
     <a href={href} className="text-red-500 hover:underline">

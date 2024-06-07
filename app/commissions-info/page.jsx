@@ -12,13 +12,13 @@ function page() {
       id: 1,
       date: "June 2024",
       desc: "Closed",
-      wl: 5,
+      wl: 6,
     },
     {
       id: 2,
       date: "July 2024",
       desc: "Selective",
-      wl: 3,
+      wl: 6,
     },
   ];
   return (

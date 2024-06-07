@@ -50,11 +50,9 @@ function Nav_Bar({ toggleMenu }) {
             />
           </svg>
           <Link
-            href="/terms-of-services"
+            href="/commissions-info"
             className={` hover:text-mainColor transition-all duration-200 font-medium ${
-              pathname === "/terms-of-services"
-                ? "text-mainColor"
-                : "text-white"
+              pathname === "/commissions-info" ? "text-mainColor" : "text-white"
             }`}
             onClick={toggleMenu}
           >
@@ -95,14 +93,14 @@ function Nav_Bar({ toggleMenu }) {
             >
               <path
                 d="M0 8.10662C3.91544 7.88603 6.83824 5.12868 7.38971 0C7.88603 6.12132 10.7537 7.22426 15 8.10662C8.71323 8.32721 7.83088 13.0147 7.33456 16.5993C6.72794 10.1471 2.97794 8.32721 0 8.10662Z"
-                fill={pathname === "/terms-of-services" ? "#A35DDE" : "white"}
+                fill={pathname === "/commissions-info" ? "#A35DDE" : "white"}
               />
             </svg>
 
             <Link
-              href="/terms-of-services"
+              href="/commissions-info"
               className={` hover:text-mainColor transition-all duration-200 font-medium ${
-                pathname === "/terms-of-services"
+                pathname === "/commissions-info"
                   ? "text-mainColor"
                   : "text-white"
               }`}

@@ -39,7 +39,7 @@ export default function PriceList() {
           </div>
         </div>
         <p className="  text-[#969494] text-[10px] font-bold mt-1">
-          Update at : {LastUpdate}
+          Laast update : {LastUpdate}
         </p>
       </div>
       <div id="Basic_Package" className="mt-[10px] pt-4 ml-6 relative w-auto">

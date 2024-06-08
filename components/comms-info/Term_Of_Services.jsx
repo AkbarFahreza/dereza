@@ -59,7 +59,7 @@ function Term_Of_Services() {
           </h3>
         </div>
         <p className="  text-[#969494] pb-2 text-[10px] font-bold mt-1">
-          Update at : {LastUpdate}
+          Last updated : {LastUpdate}
         </p>
       </div>
       <div className=" max-h-[60vh] pr-5 overflow-y-scroll ">

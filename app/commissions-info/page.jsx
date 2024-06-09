@@ -17,8 +17,8 @@ function page() {
     {
       id: 2,
       date: "July 2024",
-      desc: "Selective",
-      wl: 6,
+      desc: "Open",
+      wl: 3,
     },
   ];
   return (

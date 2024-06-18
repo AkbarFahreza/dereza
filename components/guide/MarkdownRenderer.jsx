@@ -82,10 +82,16 @@ const CustomParagraph = ({ children }) => {
 };
 
 const CustomH1 = ({ children }) => {
-  return <h1 className="text-4xl font-bold text-red-500">{children}</h1>;
+  return <h1 className="text-4xl font-bold text-white">{children}</h1>;
+};
+const CustomH2 = ({ children }) => {
+  return <h1 className="text-3xl font-bold text-white">{children}</h1>;
 };
 const CustomStrong = ({ children }) => {
   return <strong className="font-bold text-white">{children}</strong>;
+};
+const CustomLi = ({ children }) => {
+  return <strong className=" text-white">{children}</strong>;
 };
 
 const CustomLink = ({ href, children }) => {
@@ -104,8 +110,10 @@ const MarkdownRenderer = ({ content }) => {
         components={{
           p: CustomParagraph,
           h1: CustomH1,
+          h2: CustomH2,
           a: CustomLink,
           strong: CustomStrong,
+          li: CustomLi,
           code({ node, inline, className, children, ...props }) {
             return !inline ? (
               <CodeBlockWithCopy className={className}>

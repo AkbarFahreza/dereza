@@ -29,7 +29,7 @@ function page({ params }) {
   return (
     <div>
       {guideData ? (
-        <div className="w-auto px-2 md:px-20 min-h-screen flex md:space-x-6 flex-col-reverse md:flex-row-reverse justify-between items-start">
+        <div className="w-auto px-2 md:px-20 min-h-screen flex md:space-x-6 flex-col-reverse md:flex-row-reverse justify-between content-start max-h-[100vh]">
           <div className="pt-4 justify-start items-start flex md:w-2/12 w-11/12 space-x-5 md:space-x-0 flex-row overflow-x-scroll  md:flex-col md:space-y-5 md:justify-center mx-auto  max-h-[98vh] md:overflow-y-scroll no-scrollbar pb-2">
             {guides.map((item) => (
               <div
@@ -65,7 +65,7 @@ function page({ params }) {
               </div>
             ))}
           </div>
-          <div className="relative flex w-11/12 md:w-10/12 flex-col pt-[85px] md:pt-[230px] mx-auto max-h-[98vh] overflow-y-scroll no-scrollbar justify-center">
+          <div className="relative flex w-11/12 md:w-10/12 flex-col pt-[85px]  mx-auto no-scrollbar overflow-y-scroll no-scrollbar items-start pb-4">
             <div className="relative">
               <Image
                 src={guideData.thumbnail}

@@ -6,6 +6,8 @@ const Terms = [
     items: [
       "I am a friendly and fun person hehe",
       "By commissioning me, you accept the terms and conditions below.",
+      "All information sent will be kept confidential.",
+      "Get the project example through this link : https://drive.google.com/drive/folders/1gABlu_fmFgjiwhYvzY2hoqHsTyCVPusg.",
       "There are no refunds when the project is completed.",
     ],
   },

@@ -41,7 +41,7 @@ function page() {
           <div key={item.id}>
             <Image width={200} height={200} src={item.image} alt={item.name} />
             <h1>{item.name}</h1>
-            <Link href={item.sourceLink}>Detail</Link>
+            <Link className="cursor-pointer py-2 px-3 bg-mainColor rounded-md text-white font-bold" href={item.sourceLink}>Detail</Link>
           </div>
         ))}
       </div>

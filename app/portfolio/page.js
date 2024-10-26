@@ -40,7 +40,7 @@ function page() {
         {filteredItems.map((item) => (
           <div key={item.id}>
             <Image width={200} height={200} src={item.image} alt={item.name} />
-            <h1>{item.name}</h1>
+            <h1 className="py-2 font-bold">{item.name}</h1>
             <Link className="cursor-pointer py-2 px-3 bg-mainColor rounded-md text-white font-bold" href={item.sourceLink}>Detail</Link>
           </div>
         ))}

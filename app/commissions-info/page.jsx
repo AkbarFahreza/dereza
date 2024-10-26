@@ -10,8 +10,8 @@ function page() {
   const items = [
     {
       id: 1,
-      date: " September 2024",
-      desc: "Selective",
+      date: " October 2024",
+      desc: "Closed",
       wl: 3,
     },
     {

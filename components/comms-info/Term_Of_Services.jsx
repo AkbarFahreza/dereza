@@ -14,7 +14,7 @@ const Terms = [
   {
     title: "General",
     items: [
-      "This Livechat can be use for Broadcasting Software as long as they can add Browser source, e.g. OBS & Streamlabs OBS",
+      "This Livechat can currently only be used on OBS due to YouTube provisions which make other broadcasting software fail to include Custom CSS into YouTube Livechat (Until further information)",
       "I do not provide additional assets for livechat (assets from clients), i only make simple assets, because i am not artist hehe.",
       "Work estimates can be known after discussion because it depends on the progress currently underway, generally 7-21 Days.",
       "Keep in mind that there are several shapes of Livechat design that are quite impossible to code, but i will try my best.",
@@ -50,7 +50,7 @@ const Terms = [
 ];
 
 function Term_Of_Services() {
-  const LastUpdate = "10 June 2024";
+  const LastUpdate = "30 October 2024";
 
   return (
     <div className="mt-6">

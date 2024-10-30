@@ -17,7 +17,7 @@ function page() {
     {
       id: 2,
       date: " Desember 2024",
-      desc: "Open",
+      desc: "Closed",
       wl: 4,
     },
   ];

@@ -10,15 +10,15 @@ function page() {
   const items = [
     {
       id: 1,
-      date: " November 2024",
+      date: " January 2025",
       desc: "Closed",
-      wl: 3,
+      wl: 5,
     },
     {
       id: 2,
-      date: " Desember 2024",
+      date: " February 2025",
       desc: "Closed",
-      wl: 4,
+      wl: 5,
     },
   ];
   return (

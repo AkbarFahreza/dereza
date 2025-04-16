@@ -254,7 +254,22 @@ const items = [
         category: "YT Chat Commissions",
         Datecreated: "May 2024",
       },
-
+{
+        id: 31,
+        name: "Nemo Nevermore",
+        image: "https://pbs.twimg.com/media/GooQDUqWUAAInjz?format=jpg&name=medium",
+        sourceLink: "https://x.com/Revernry/status/1912359320903426487",
+        category: "YT Chat Commissions",
+        Datecreated: "December 2024",
+      },
+      {
+        id: 32,
+        name: "Merra Merona",
+        image: "https://pbs.twimg.com/media/GojTwr8WYAA5JCu?format=jpg&name=medium",
+        sourceLink: "https://x.com/Revernry/status/1912011370389971315",
+        category: "YT Chat Commissions",
+        Datecreated: "January 2025",
+      },
       // {
       //   id: 5,
       //   name: "",

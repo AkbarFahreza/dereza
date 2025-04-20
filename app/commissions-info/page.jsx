@@ -37,7 +37,7 @@ function page() {
             Commissions Status
           </h3>
           {items.map((status) => (
-            <div className="relative ml-10 pt-5">
+            <div className="relative ml-10 pt-5" key={status.id}>
               <span className="w-1 absolute -top-1 -left-4 h-[20px] border-l-2 border-l-white border-dotted"></span>
               <span className="w-1 absolute bottom-0 -left-4 h-[50%] border-l-2 border-l-white border-dotted"></span>
 

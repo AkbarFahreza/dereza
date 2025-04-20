@@ -11,28 +11,29 @@ const Menu = () => {
   };
 
   return (
-    <div className={`fixed z-50 ${usePathname() === "/" ? " md:hidden" : ""}`}>
+    <div className={`fixed z-50  w-full ${usePathname() === "/" ? " md:hidden" : ""}`}>
+      <div className="absolute w-full top-0 pb-2 left-0 z-20 block bg-mainColor backdrop-brightness-[0.3] bg-opacity-15 backdrop-blur-md">
       <button
-        className="absolute top-5 left-5 z-20 block focus:outline-none"
+        className="mt-4 ml-5 focus:outline-none"
         onClick={toggleMenu}
       >
         <div
-          className={`block w-8 h-1 transition-transform duration-300 transform ${
+          className={`block w-8 h-1 transition-transform duration-300 transform rounded-lg ${
             isOpen ? "rotate-45 translate-y-2 bg-white" : "bg-white"
           }`}
         ></div>
         <div
-          className={`block w-8 h-1 my-1 transition-opacity duration-300 ${
+          className={`block w-8 h-1 my-1 transition-opacity duration-300 rounded-lg ${
             isOpen ? "opacity-0" : "bg-white"
           }`}
         ></div>
         <div
-          className={`block w-8 h-1 transition-transform duration-300 transform ${
+          className={`block w-8 h-1 transition-transform duration-300 transform rounded-lg ${
             isOpen ? "-rotate-45 -translate-y-2 bg-white" : "bg-white"
           }`}
         ></div>
       </button>
-
+      </div>
       <div
         className={`fixed top-0 left-0 w-full origin-top-left h-screen bg-mainColor backdrop-brightness-[0.3] bg-opacity-15 backdrop-blur-md flex flex-col items-start justify-start transition-all duration-500 transform ${
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"

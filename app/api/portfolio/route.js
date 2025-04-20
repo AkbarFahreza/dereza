@@ -152,16 +152,18 @@ const items = [
       {
         id: 17,
         name: "Brilian pendragon",
-        image: "https://pbs.twimg.com/media/GKKuh7dbYAAHbD5?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GKKuh7dbYAAHbD5?format=jpg&name=medium",
         sourceLink: "https://twitter.com/Revernry/status/1775174253106868355",
         category: "YT Chat Commissions",
         Datecreated: "Desember 2023",
       },
-     
+
       {
         id: 19,
         name: "Vera Dinita",
-        image: "https://pbs.twimg.com/media/GKAYojFa0AEWwcT?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GKAYojFa0AEWwcT?format=jpg&name=medium",
         sourceLink: "https://twitter.com/Revernry/status/1774445678384800176",
         category: "YT Chat Commissions",
         Datecreated: "March 2024",
@@ -169,7 +171,8 @@ const items = [
       {
         id: 20,
         name: "Nephil Sigurd",
-        image: "https://pbs.twimg.com/media/GXBsOndaQAAQU8R?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GXBsOndaQAAQU8R?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1833084345827151878",
         category: "YT Chat Commissions",
         Datecreated: "June 2024",
@@ -177,7 +180,8 @@ const items = [
       {
         id: 21,
         name: "Mitsuki Rion",
-        image: "https://pbs.twimg.com/media/GWoLHeYXsAAxWqC?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GWoLHeYXsAAxWqC?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1831289056573174049",
         category: "YT Chat Commissions",
         Datecreated: "May 2024",
@@ -185,7 +189,8 @@ const items = [
       {
         id: 22,
         name: "Kiseki Miya",
-        image: "https://pbs.twimg.com/media/GWoKVWUbsAAGLbt?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GWoKVWUbsAAGLbt?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1831287582799597916",
         category: "YT Chat Commissions",
         Datecreated: "May 2024",
@@ -193,7 +198,8 @@ const items = [
       {
         id: 23,
         name: "Ookami Stela",
-        image: "https://pbs.twimg.com/media/GWnbPDbaoAE4xW2?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GWnbPDbaoAE4xW2?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1831236934737539139",
         category: "YT Chat Commissions",
         Datecreated: "August 2024",
@@ -201,7 +207,8 @@ const items = [
       {
         id: 24,
         name: "Nanimo Navi",
-        image: "https://pbs.twimg.com/media/GSNgs-kb0AA2UwU?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GSNgs-kb0AA2UwU?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1811399000249266313",
         category: "YT Chat Commissions",
         Datecreated: "June 2024",
@@ -209,7 +216,8 @@ const items = [
       {
         id: 25,
         name: "Airis Castafione",
-        image: "https://pbs.twimg.com/media/GSNfWUlasAAx2N_?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GSNfWUlasAAx2N_?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1811397340273705364",
         category: "YT Chat Commissions",
         Datecreated: "June 2024",
@@ -217,7 +225,8 @@ const items = [
       {
         id: 26,
         name: "Sado Ren",
-        image: "https://pbs.twimg.com/media/GRt8Q9dbYAAQSYS?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GRt8Q9dbYAAQSYS?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1809177969157407130",
         category: "YT Chat Commissions",
         Datecreated: "June 2024",
@@ -225,7 +234,8 @@ const items = [
       {
         id: 27,
         name: "Arterachi Lycheesan",
-        image: "https://pbs.twimg.com/media/GOzfOzUbsAAR3RY?format=png&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GOzfOzUbsAAR3RY?format=png&name=medium",
         sourceLink: "https://x.com/Revernry/status/1796055959141277758",
         category: "YT Chat Commissions",
         Datecreated: "April 2024",
@@ -233,7 +243,8 @@ const items = [
       {
         id: 28,
         name: "Faraby Nycxella",
-        image: "https://pbs.twimg.com/media/GOzY-NMbsAAngDq?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GOzY-NMbsAAngDq?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1796049431776854196",
         category: "YT Chat Commissions",
         Datecreated: "April 2024",
@@ -241,7 +252,8 @@ const items = [
       {
         id: 29,
         name: "Arial Yuriko  CH. [VREVERIE]",
-        image: "https://pbs.twimg.com/media/GM3PnMxaIAAvT9w?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GM3PnMxaIAAvT9w?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1787315616598425985",
         category: "YT Chat Commissions",
         Datecreated: "March 2024",
@@ -249,15 +261,17 @@ const items = [
       {
         id: 30,
         name: "Asa Kaori",
-        image: "https://pbs.twimg.com/media/GMzwRwRbQAAgUGa?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GMzwRwRbQAAgUGa?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1787068702200041889",
         category: "YT Chat Commissions",
         Datecreated: "May 2024",
       },
-{
+      {
         id: 31,
         name: "Nemo Nevermore",
-        image: "https://pbs.twimg.com/media/GooQDUqWUAAInjz?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GooQDUqWUAAInjz?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1912359320903426487",
         category: "YT Chat Commissions",
         Datecreated: "December 2024",
@@ -265,8 +279,18 @@ const items = [
       {
         id: 32,
         name: "Merra Merona",
-        image: "https://pbs.twimg.com/media/GojTwr8WYAA5JCu?format=jpg&name=medium",
+        image:
+          "https://pbs.twimg.com/media/GojTwr8WYAA5JCu?format=jpg&name=medium",
         sourceLink: "https://x.com/Revernry/status/1912011370389971315",
+        category: "YT Chat Commissions",
+        Datecreated: "January 2025",
+      },
+      {
+        id: 33,
+        name: "Eros Adras",
+        image:
+          "https://pbs.twimg.com/media/Go54lEMbIAAJBXh?format=jpg&name=medium",
+        sourceLink: "https://x.com/Revernry/status/1913605470939390192",
         category: "YT Chat Commissions",
         Datecreated: "January 2025",
       },

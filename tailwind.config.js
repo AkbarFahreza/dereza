@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         bebas: ["Bebas Neue", "cursive"],
-        kaushan: ["Kaushan Script", "cursive"],
+        inter: ["Inter", "sans-serif"], // Default font
+        kaushan: ["Kaushan Script", "cursive"], // Kaushan Script
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

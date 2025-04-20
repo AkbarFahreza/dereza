@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, use } from "react";
 import Image from "next/image";
 import MarkdownRenderer from "@/components/guide/MarkdownRenderer";
 import Link from "next/link";
 
-function page({ params }) {
+function page(props) {
+  const params = use(props.params);
   const [guideData, setGuideData] = useState(null);
   const [guides, setGuides] = useState(null);
 

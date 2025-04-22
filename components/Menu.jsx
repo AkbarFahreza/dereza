@@ -33,6 +33,7 @@ const Menu = () => {
           }`}
         ></div>
       </button>
+      {process.env.NODE_ENV === 'development' ? <p className="text-white absolute rotate-45 top-5 -right-5 text-xs font-bold bg-red-400 px-5">dev mode</p> : ""}
       </div>
       <div
         className={`fixed top-0 left-0 w-full origin-top-left h-screen bg-mainColor backdrop-brightness-[0.3] bg-opacity-15 backdrop-blur-md flex flex-col items-start justify-start transition-all duration-500 transform ${

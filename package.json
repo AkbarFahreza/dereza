@@ -12,6 +12,7 @@
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "15.3.1",
+    "@supabase/supabase-js": "^2.49.4",
     "@tailwindcss/typography": "^0.5.13",
     "@types/mdx": "^2.0.13",
     "@uiw/react-md-editor": "^4.0.4",

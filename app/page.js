@@ -1,4 +1,5 @@
 import HomeGuide from "@/components/guide/HomeGuide";
+import Analytics from "@/components/home/Analytics";
 import Home_Profile from "@/components/home/Home_Profile";
 import Nav_Bar from "@/components/home/Nav_Bar";
 import Home_Portfolio from "@/components/portfolios/Home_Portfolio";
@@ -32,6 +33,7 @@ export default function Home() {
               This is supposed to be introduction words but I don’t know what to
               type here, so let’s get to see what I’ve done!!
             </p>
+            <Analytics />
           </div>
           <div
             id="might-help-you"

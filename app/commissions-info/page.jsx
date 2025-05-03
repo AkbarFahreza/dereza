@@ -10,13 +10,13 @@ function page() {
   const items = [
     {
       id: 1,
-      date: "April 2025",
+      date: "May 2025",
       desc: "Closed",
-      wl: 4,
+      wl: 5,
     },
     {
       id: 2,
-      date: "May 2025",
+      date: "June 2025",
       desc: "Selective",
       wl: 3,
     },

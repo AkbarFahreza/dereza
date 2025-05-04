@@ -1,7 +1,7 @@
 export async function GET() {
-  const TRELLO_API_KEY = process.env.TRELLO_API_KEY;
-  const TRELLO_TOKEN = process.env.TRELLO_TOKEN;
-  const BOARD_ID = process.env.TRELLO_BOARD_ID;
+  const TRELLO_API_KEY = process.env.NEXT_PUBLIC_TRELLO_API_KEY;
+  const TRELLO_TOKEN = process.env.NEXT_PUBLIC_TRELLO_TOKEN;
+  const BOARD_ID = process.env.NEXT_PUBLIC_TRELLO_BOARD_ID;
 
   try {
     // Fetch cards

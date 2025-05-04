@@ -59,8 +59,8 @@ function Nav_Bar({ toggleMenu }) {
             Commisions
           </Link>
         </div>
-        {/* <ul className="ml-6">
-          <li className="flex flex-row gap-2 my-2 items-center">
+        <ul className="ml-6">
+          <li className="flex flex-row gap-2 my-4 items-center">
             <svg
               width="15"
               height="17"
@@ -70,46 +70,26 @@ function Nav_Bar({ toggleMenu }) {
             >
               <path
                 d="M0 8.10662C3.91544 7.88603 6.83824 5.12868 7.38971 0C7.88603 6.12132 10.7537 7.22426 15 8.10662C8.71323 8.32721 7.83088 13.0147 7.33456 16.5993C6.72794 10.1471 2.97794 8.32721 0 8.10662Z"
-                fill={pathname === "/price-list" ? "#A35DDE" : "white"}
+                fill={
+                  pathname === "/commissions-info/waiting-list"
+                    ? "#A35DDE"
+                    : "white"
+                }
               />
             </svg>
             <Link
-              href="#"
+              href="/commissions-info/waiting-list"
               className={` hover:text-mainColor transition-all duration-200 font-medium ${
-                pathname === "/price-list" ? "text-mainColor" : "text-white"
-              }`}
-              onClick={toggleMenu}
-            >
-              Price List
-            </Link>
-          </li>
-          <li className="flex flex-row gap-2 my-2 items-center">
-            <svg
-              width="15"
-              height="17"
-              viewBox="0 0 15 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 8.10662C3.91544 7.88603 6.83824 5.12868 7.38971 0C7.88603 6.12132 10.7537 7.22426 15 8.10662C8.71323 8.32721 7.83088 13.0147 7.33456 16.5993C6.72794 10.1471 2.97794 8.32721 0 8.10662Z"
-                fill={pathname === "/commissions-info" ? "#A35DDE" : "white"}
-              />
-            </svg>
-
-            <Link
-              href="/commissions-info"
-              className={` hover:text-mainColor transition-all duration-200 font-medium ${
-                pathname === "/commissions-info"
+                pathname === "/commissions-info/waiting-list"
                   ? "text-mainColor"
                   : "text-white"
               }`}
               onClick={toggleMenu}
             >
-              Terms
+              Waiting list
             </Link>
           </li>
-        </ul> */}
+        </ul>
       </li>
       <li className="hover:text-mainColor transition-all duration-200 ">
         <div className="h-5 w-1 border-l-2 border-dotted border-mainColor ml-2 mb-[2px]"></div>

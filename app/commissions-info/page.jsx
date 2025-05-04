@@ -12,13 +12,11 @@ function page() {
       id: 1,
       date: "May 2025",
       desc: "Closed",
-      wl: 5,
     },
     {
       id: 2,
       date: "June 2025",
       desc: "Selective",
-      wl: 3,
     },
   ];
   return (
@@ -32,33 +30,40 @@ function page() {
         className="scale-[65%] absolute top-2 left-1/2 -translate-x-1/2"
       />
       <div className="flex flex-col space-y-12 md:space-y-0 md:flex-row md:space-x-[15vh] justify-between mt-[20vh]">
-        <div className="w-full md:w-6/12">
+        <div className="w-full md:w-6/12 flex flex-col">
           <h3 className="font-kaushan text-2xl font-bold text-secondaryColor mb-3">
             Commissions Status
           </h3>
-          {items.map((status) => (
-            <div className="relative ml-10 pt-5" key={status.id}>
-              <span className="w-1 absolute -top-1 -left-4 h-[20px] border-l-2 border-l-white border-dotted"></span>
-              <span className="w-1 absolute bottom-0 -left-4 h-[50%] border-l-2 border-l-white border-dotted"></span>
+          <div className="mb-4">
+            {items.map((status) => (
+              <div className="relative ml-10 pt-5" key={status.id}>
+                <span className="w-1 absolute -top-1 -left-4 h-[20px] border-l-2 border-l-white border-dotted"></span>
+                <span className="w-1 absolute -bottom-1 -left-4 h-[50%] border-l-2 border-l-white border-dotted"></span>
 
-              <div className="relative">
-                <Image
-                  src="/sparkle.svg"
-                  alt="sparkle"
-                  width={18}
-                  height={20}
-                  className="absolute top-1/2 -translate-y-1/2 -left-6"
-                />
-                <p className="text-mainColor font-bold text-xl  mb-1">
-                  {status.date}
-                </p>
+                <div className="relative">
+                  <Image
+                    src="/sparkle.svg"
+                    alt="sparkle"
+                    width={18}
+                    height={20}
+                    className="absolute top-1/2 -translate-y-1/2 -left-6"
+                  />
+                  <p className="text-mainColor font-bold text-xl  mb-1">
+                    {status.date}
+                  </p>
+                </div>
+                <div className="ml-5">
+                  <p className="text-base font-bold pb-3">{status.desc}</p>
+                </div>
               </div>
-              <div className="ml-5">
-                <p className="text-base font-bold mb-1">{status.desc}</p>
-                <p className="text-sm mb-1">Waiting List [{status.wl}]</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <Link
+            href="/commissions-info/waiting-list"
+            className="typograph-subtext hover:text-mainColor transition-all duration-200 font-bold text-secondaryColor "
+          >
+           See Waiting Lists &gt;
+          </Link>
         </div>
         <div className="md:w-6/12 pb-[5vh] md:pb-0">
           <MenuButton />

@@ -19,7 +19,6 @@ export async function GET() {
         { status: cardsRes.status }
       );
     }
-
     if (!cardsContentType?.includes("application/json")) {
       const text = await cardsRes.text();
       return Response.json(

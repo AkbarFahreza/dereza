@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative overflow-hidden md:-mt-16">
+    <main className="min-h-screen relative overflow-hidden md:-mt-16 -mt-5">
       <Image
         src="/decor-1.svg"
         width={263}
@@ -25,13 +25,13 @@ export default function Home() {
         </nav>
         <div id="content-wrapper">
           <div id="intro-text" className="flex flex-col justify-start">
-            <h2 className="font-kaushan text-2xl">Hello!! I am Reza</h2>
-            <p className="text-sm my-1 font-medium text-mainColor">
-              Custom Youtube Livechat Coder
-            </p>
-            <p className="text-xs my-1 font-medium ">
-              This is supposed to be introduction words but I don’t know what to
-              type here, so let’s get to see what I’ve done!!
+            <h2 className="font-kaushan typograph-heading-2">
+              Hello!! I am Reza
+            </h2>
+            <p className="text-xs my-2 md:max-w-lg font-medium ">
+              I make custom CSS for YouTube live chat that matches your VTuber
+              overlay, colors, and vibe, so your chat looks clean, stylish, and
+              totally you on stream.
             </p>
             <Analytics />
           </div>

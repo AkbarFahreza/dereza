@@ -46,9 +46,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`relative ${inter.className}`}>
+      <body className={`relative  ${inter.className}`}>
         <Menu />
-        <div className="pt-16">{children}</div>
+        <div className="pt-16 max-w-[1366px] mx-auto">{children}</div>
       </body>
     </html>
   );

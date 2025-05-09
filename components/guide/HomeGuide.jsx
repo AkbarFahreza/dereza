@@ -33,13 +33,13 @@ function HomeGuide() {
   );
 
   return (
-    <div className="pt-4 flex flex-row max-w-[90vw]  space-x-5 align-middle overflow-x-scroll no-scrollbar pb-2 ">
+    <div className="pt-4 flex flex-row max-w-[90vw]  space-x-5 align-middle overflow-x-scroll md:overflow-visible  no-scrollbar pb-2 ">
       {loading
         ? Array.from({ length: 4 }).map((_, index) => <Skeleton key={index} />)
         : items.map((item) => (
             <div
               key={item.id}
-              className="rounded-lg shrink-0 max-w-[238px] hover:-translate-y-2 transition-all duration-200"
+              className="rounded-lg shrink-0 max-w-[238px] hover:-translate-y-2 transition-all duration-200 bg-ghostColor py-5 px-3"
             >
               <Link href={`/guide/${item.params}`}>
                 <div className="flex flex-col items-start">

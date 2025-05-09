@@ -6,15 +6,15 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 15, 15, 21;
-  --background-end-rgb: 15, 15, 21;
+  --background-start-rgb: 42, 44, 58;
+  --background-end-rgb: 42, 44, 58;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 15, 15, 21;
-    --background-end-rgb: 15, 15, 21;
+    --background-start-rgb: 42, 44, 58;
+    --background-end-rgb: 42, 44, 58;
   }
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 .typograph-subtext {
-  @apply text-sm md:text-base leading-relaxed font-normal;
+  @apply text-sm md:text-base leading-relaxed;
 }
 
 /* Caption Styles */

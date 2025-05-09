@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#A35DDE",
-        mainColor: "#A35DDE",
-        secondaryColor: "#FE0098",
+        dark: "#CE93FF",
+        mainColor: "#CE93FF",
+        ghostColor: "#373A4C",
+        secondaryColor: "#A35DDE",
       },
       fontFamily: {
         bebas: ["Bebas Neue", "cursive"],

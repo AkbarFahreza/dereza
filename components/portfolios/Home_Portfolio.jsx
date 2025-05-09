@@ -62,7 +62,7 @@ function Home_Portfolio() {
           More
         </Link>
       </div>
-      <div className="mt-4 py-2 flex flex-row space-x-4 lg:space-x-5 whitespace-nowrap overflow-x-scroll pb-2">
+      <div className="mt-4 py-3 flex flex-row space-x-4 lg:space-x-5 whitespace-nowrap overflow-x-scroll md:overflow-visible pb-2">
         {loading ? (
           <>
             <Skeleton />
@@ -72,9 +72,10 @@ function Home_Portfolio() {
           </>
         ) : (
           items.map((item) => (
-            <div
+            <Link
+              href={item.sourceLink}
               key={item.id}
-              className="flex flex-col shrink-0 min-w-[200px] p-3 rounded-lg border-[1px] border-mainColor lg:pb-4 hover:shadow-sm hover:shadow-mainColor transition-all duration-200"
+              className="flex flex-col shrink-0 min-w-[200px] py-5 px-3 bg-ghostColor rounded-lg lg:pb-4 hover:shadow-lg cursor-pointer hover:shadow-mainColor/30 transition-all duration-200"
             >
               <Image
                 width={200}
@@ -84,17 +85,11 @@ function Home_Portfolio() {
                 src={item.image}
               />
               <div className="mt-2 flex flex-col space-y-2">
-                <h1 className="font-bold mobile-title-b text-white lg:text-md">
+                <h1 className="font-bold mobile-title-b text-white .typograph-subtext">
                   {item.name}
                 </h1>
-                <Link
-                  href={item.sourceLink}
-                  className="py-[2px] px-3 font-bold custom-gradient rounded-full text-white border-[1px] border-mainColor w-fit text-sm  transition-all duration-500"
-                >
-                  Detail
-                </Link>
               </div>
-            </div>
+            </Link>
           ))
         )}
       </div>

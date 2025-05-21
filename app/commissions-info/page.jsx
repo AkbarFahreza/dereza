@@ -11,12 +11,12 @@ function page() {
     {
       id: 1,
       date: "May 2025",
-      desc: "Closed",
+      desc: "Open",
     },
     {
       id: 2,
       date: "June 2025",
-      desc: "Selective",
+      desc: "Open",
     },
   ];
   return (

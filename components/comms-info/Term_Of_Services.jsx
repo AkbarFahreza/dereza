@@ -16,7 +16,7 @@ const Terms = [
     items: [
       "This Livechat can currently only be used on OBS due to YouTube provisions which make other broadcasting software fail to include Custom CSS into YouTube Livechat (Until further information)",
       "I do not provide additional assets for livechat (assets from clients), i only make simple assets, because i am not artist hehe.",
-      "Work estimates can be known after discussion because it depends on the progress currently underway, generally 7-21 Days.",
+      "Work estimates can be known after discussion because it depends on the progress currently underway",
       "Keep in mind that there are several shapes of Livechat design that are quite impossible to code, but i will try my best.",
       "After the project is complete, you will get installation guide and a .CSS format file which will be sent via Google Drive.",
     ],
@@ -25,7 +25,7 @@ const Terms = [
     title: "Progressions",
     items: [
       "The project will be carried out if both parties agree to start.",
-      "I'll let you know the progress update every at least 3 days.",
+      "I'll let you know the progress update every at least 2 days.",
       "You have the right to ask for progress updates",
     ],
   },
@@ -50,7 +50,7 @@ const Terms = [
 ];
 
 function Term_Of_Services() {
-  const LastUpdate = "30 October 2024";
+  const LastUpdate = "22 May 2025";
 
   return (
     <div className="mt-6">

@@ -7,7 +7,7 @@ export async function GET() {
     // Fetch cards
     const cardsUrl = `https://api.trello.com/1/boards/${BOARD_ID}/cards?key=${TRELLO_API_KEY}&token=${TRELLO_TOKEN}`;
     const cardsRes = await fetch(cardsUrl, {
-      next: { revalidate: 300 },
+      next: { revalidate: 100 },
     });
 
     const cardsContentType = cardsRes.headers.get("content-type");
@@ -19,6 +19,7 @@ export async function GET() {
         { status: cardsRes.status }
       );
     }
+
     if (!cardsContentType?.includes("application/json")) {
       const text = await cardsRes.text();
       return Response.json(

@@ -48,7 +48,7 @@ export default function TrelloBoard() {
               <div id="waitlist-items">
                 {cards.map((card, index) => {
                   {
-                    console.log(card);
+                    // console.log(card);
                   }
                   if (index === 0) return null;
                   const labels = card.labels || [];

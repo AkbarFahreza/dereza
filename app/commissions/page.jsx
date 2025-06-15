@@ -59,10 +59,10 @@ function page() {
             ))}
           </div>
           <Link
-            href="/commissions-info/waiting-list"
+            href="/commissions/waiting-list"
             className="typograph-subtext hover:text-mainColor transition-all duration-200 font-bold text-secondaryColor "
           >
-           See Waiting Lists &gt;
+            See Waiting Lists &gt;
           </Link>
         </div>
         <div className="md:w-6/12 pb-[5vh] md:pb-0">

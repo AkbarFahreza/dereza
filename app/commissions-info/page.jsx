@@ -11,12 +11,12 @@ function page() {
     {
       id: 1,
       date: "June 2025",
-      desc: "Selective",
+      desc: "Closed",
     },
     {
       id: 2,
       date: "July 2025",
-      desc: "Open",
+      desc: "Selective",
     },
   ];
   return (
@@ -62,7 +62,7 @@ function page() {
             href="/commissions-info/waiting-list"
             className="typograph-subtext hover:text-mainColor transition-all duration-200 font-bold text-secondaryColor "
           >
-           See Waiting Lists &gt;
+            See Waiting Lists &gt;
           </Link>
         </div>
         <div className="md:w-6/12 pb-[5vh] md:pb-0">

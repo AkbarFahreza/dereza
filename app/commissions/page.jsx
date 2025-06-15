@@ -10,12 +10,12 @@ function page() {
   const items = [
     {
       id: 1,
-      date: "May 2025",
-      desc: "Open",
+      date: "June 2025",
+      desc: "Selective",
     },
     {
       id: 2,
-      date: "June 2025",
+      date: "July 2025",
       desc: "Open",
     },
   ];
